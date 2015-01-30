@@ -1,0 +1,75 @@
+body {
+  font-family: franklin-gothic-urw, Arial, Helvetica, sans-serif;
+  color: #333;
+  font-size: 14px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+h1 {
+  font-weight: normal;
+  font-size: 2.4em;
+  small {
+    font-size: 0.8em;
+  }
+}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+p {}
+a {
+  color: #2d8af0;
+
+  &:hover {
+
+  }
+}
+
+
+
+
+.site-brand__link {
+  display: inline-block;
+  width: 144px;
+  height: 101px;
+  background: url("../images/logo1.png") no-repeat center center;
+  background-size: contain;
+  text-indent: -9999px;
+}
+.site-brand__name {}
+
+.site-brand--header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  float: left;
+  .site-brand__link {
+    width: 144px;
+    height: 101px;
+  }
+}
+
+
+@media @breakpoint-size-sm {
+  body {
+    font-size: 16px;
+  }
+}
+@media @breakpoint-size-md {
+  body {
+    font-size: 18px;
+  }
+}
+@media @breakpoint-size-lg {
+  body {
+    font-size: 20px;
+  }
+}
