@@ -1,4 +1,4 @@
-(function(window, document, $, _, undefined) {
+(function(window, document, $, _, mixpanel) {
 
     (function(con) {
         if (con === undefined) {
@@ -13,7 +13,19 @@
         if (location.href.indexOf('keithdaulton.com') === -1) {
             return;
         }
-        mixpanel.track("test");
+        mixpanel.register_once({
+            "init visit": (new Date()).toDateString()
+        });
+        mixpanel.track("site loaded", {
+            "site version": "3.0.0"
+        });
+
+        mixpanel.track_links(".section--portfolio a", "port link click", {
+            "referrer": document.referrer
+        });
+        mixpanel.track_links(".section--contact a", "contact link click", {
+            "referrer": document.referrer
+        });
     })(window.location);
 
     var Constants = {
@@ -43,8 +55,9 @@
     };
 
     $windowEl.on('scroll', _.throttle(function() {
+        //console.count("scroll");
         togglePinnedHeader();
-    }, 100));
+    }, 200));
     togglePinnedHeader();
 
 
@@ -79,8 +92,8 @@
     });
 
     $windowEl.load(function() {
-        scrollToSection(window.location.hash);
+        //scrollToSection(window.location.hash);
     });
 
 
-})(window, document, window.jQuery, window._);
+})(window, document, window.jQuery, window._, window.mixpanel);
