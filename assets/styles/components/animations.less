@@ -1,26 +1,24 @@
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-   @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-        @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
 .animation-fade-in {
   // make things invisible upon start
   opacity: 0;
 
   // call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time
-  .animation(fadeIn ease-in 1);
+  animation: fadeIn ease-in 1;
 
   // this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)
-  .animation-fill-mode(forwards);
+  animation-fill-mode: forwards;
 
-  .animation-duration(0.5s);
+  animation-duration: 0.5s;
 }
 
 .animation-delay-1 {
-  .animation-delay(0.7s);
+  animation-delay: 0.7s;
 }
 .animation-delay-2 {
-  .animation-delay(1.2s);
+  animation-delay: 1.2s;
 }
 .animation-delay-3 {
-  .animation-delay(1.6s);
+  animation-delay: 1.6s;
 }

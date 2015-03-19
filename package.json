@@ -1,0 +1,20 @@
+{
+  "name": "keithdaulton.com",
+  "version": "0.0.1",
+  "description": "Parsonal website of Keith Daulton",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/d13/keithdaulton.com.git"
+  },
+  "author": "Keith Daulton",
+  "private": true,
+  "scripts": {
+    "build": "grunt all"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^2.2.0",
+    "grunt-contrib-less": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
