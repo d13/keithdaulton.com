@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<!--[if lt IE 9 ]><html lang="en" class="no-js lt-ie9 xp-is-for-dev---not-for-os"><![endif]-->
-<!--[if IE 9 ]><html lang="en" class="no-js ie9 upgrade-your-vista---baby"><![endif]-->
-<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<html lang="en">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Keith Daulton - Senior UI Developer and Designer</title>
-    <meta name="description" content="Senior front-end web developer and designer, Keith Daulton." />
-    <meta name="keywords" content="web, developer, designer, front end, ui, ux, user experience, user interface, javascript, portfolio, responsive, ui ninja" />
+    <title>Keith Daulton - Design Technologist, Front-End Development Lead, User Experience Engineer</title>
+    <meta name="description" content="Design technology, front-end development and user experience engineering portfolio of Keith Daulton." />
+    <meta name="keywords" content="front-end, design technology, design systems, front end, ui, ux, user experience, user interface, javascript, portfolio, responsive, web, developer, designer" />
     <meta name="author" content="Keith Daulton" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/og-image.png" />
+    <meta property="og:image:alt" content="Hello! I'm a UI Developer and Designer with a passion for creating awesome user experiences for web and mobile. I make pixels and divs pretty!" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="assets/styles/site.css" />
+    <link rel="stylesheet" href="assets/styles/styles.css" />
 
     <!-- needs custom build for speed -->
-    <script src="assets/scripts/libs/modernizr/modernizr-2.8.3.min.js"></script>
+    <!-- <script src="assets/scripts/libs/modernizr/modernizr-2.8.3.min.js"></script> -->
     <script>
         (function(d) {
             var config = {
@@ -34,18 +35,16 @@
     <!-- end Mixpanel -->
 </head>
 <body>
-<header class="page-header" data-site-region="header">
-    <div class="site-brand--header">
-        <a class="site-brand__link" href="#">
+<header class="page-header" data-site-region="header" role="banner">
+    <a href="#page-main" class="page-header__skip h-sr-only-focusable">Skip to main content</a>
+    <a href="#page-nav" class="page-header__skip h-sr-only-focusable">Skip to main navigation</a>
+    <div class="page-header__brand">
+        <a class="site-brand" href="#">
             <span class="site-brand__name">Keith Daulton</span>
         </a>
     </div>
-    <nav class="site-nav" data-site-region="nav">
-        <a class="site-nav__burger" href="#"><i class="fa fa-bars"></i></a>
+    <nav id="page-nav" class="site-nav page-header__nav" data-site-region="nav" aria-label="Main navigation">
         <ul class="site-nav__list">
-            <!--
-            <li class="site-nav__item"><a class="site-nav__link" href="#">Hello</a></li>
-            -->
             <li class="site-nav__item"><a class="site-nav__link" href="#about">Bio</a></li>
             <li class="site-nav__item"><a class="site-nav__link" href="#portfolio">Portfolio</a></li>
             <li class="site-nav__item"><a class="site-nav__link" href="#resume">Experience</a></li>
@@ -54,157 +53,197 @@
         </ul>
     </nav>
 </header>
-<div class="page-main">
-    <section class="section--intro" id="intro" data-site-region="hero">
+<div id="page-main" class="page-main" role="main">
+    <section class="section section--intro" id="intro" data-site-region="hero">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col col--xs-12 col--sm-6">
                     <h1>
                         Hi, my name is Keith
                         <small>I make pixels &amp; divs pretty</small>
                     </h1>
                     <p>An accomplished User Interface Developer and Designer with a passion for creating awesome user experiences for web and mobile.</p>
                 </div>
-                <div class="col-sm-6">
+                <div class="col col--xs-12 col--sm-6">
                 </div>
             </div>
         </div>
     </section>
-    <section class="section--about" id="about" data-site-region="about">
+    <section class="section section--about" id="about" data-site-region="about">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col col--xs-12 col--sm-6">
                     <h1>Keith Daulton &mdash;</h1>
                     <p>
                         A leader in user-interface development and design with over 14 years of experience and a proven track record for delivering scalable, interactive and multi-device web experiences including: online stores, single-page applications, marketing apps, widgets, microsites, landing pages and social-networking websites.
                     </p>
                 </div>
-                <div class="col-sm-6">
+                <div class="col col--xs-12 col--sm-6">
                 </div>
             </div>
         </div>
     </section>
-    <section class="section--portfolio" id="portfolio">
+    <section class="section section--portfolio" id="portfolio">
         <div class="container">
             <h1>
                 Portfolio
                 <small>because seeing is much more fun</small>
             </h1>
             <div class="row no-gutter">
-                <div class="col-sm-6">
-                    <figure class="portfolio-item"><img src="http://dev.d13design.com/assets/images/port/port_sparx_prev.png" alt="Sparx site design" />
-                        <figcaption>
-                            <h3>Sparx</h3>
+                <div class="col col--xs-12 col--sm-6">
+                    <figure class="portfolio-item">
+                        <img src="assets/images/port/raw/chewy-checkout.png" alt="Chewy Checkout Screen" />
+                        <figcaption class="portfolio-item__content" tabindex="0">
+                            <h3>Hybrid SPA</h3>
                             <dl>
-                                <dt>Project</dt>
+                                <dt>Company</dt>
+                                <dd>Chewy.com</dd>
+
+                                <dt>Role</dt>
+                                <dd>Protyping, Architecture, Front-end Development</dd>
+
+                                <dt>Tools</dt>
+                                <dd>Vue, TypeScript, SASS, Storybook, Yarn monorepo, Figma</dd>
+                            </dl>
+                            <a href="https://www.chewy.com/" target="_blank">Launch website</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col col--xs-12 col--sm-6">
+                    <figure class="portfolio-item">
+                        <img src="assets/images/port/raw/ion/app-redesign.png" alt="Legacy Application Dashboard" />
+                        <figcaption class="portfolio-item__content" tabindex="0">
+                            <h3>Legacy Application Redesign</h3>
+                            <dl>
+                                <dt>Company</dt>
+                                <dd>ScribbleLive (ion interactive)</dd>
+
+                                <dt>Role</dt>
+                                <dd>Protyping, Architecture, Front-end Development</dd>
+
+                                <dt>Tools</dt>
+                                <dd>ASP.NET, ES5, Vue, SASS, Figma</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col col--xs-12 col--sm-6">
+                    <figure class="portfolio-item">
+                        <img src="assets/images/port/raw/ion/design-system.png" alt="Design System Screenshot" />
+                        <figcaption class="portfolio-item__content" tabindex="0">
+                            <h3>Design System</h3>
+                            <dl>
+                                <dt>Company</dt>
+                                <dd>ScribbleLive (ion interactive)</dd>
+
+                                <dt>Role</dt>
+                                <dd>Architecture, Front-end Development</dd>
+
+                                <dt>Tools</dt>
+                                <dd>HTML, ES5, SASS, Figma</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col col--xs-12 col--sm-6">
+                    <figure class="portfolio-item">
+                        <img src="assets/images/port/raw/ion/quiz-builder.png" alt="Quiz Builder Screenshot" />
+                        <figcaption class="portfolio-item__content" tabindex="0">
+                            <h3>Quiz and Assessment Builder</h3>
+                            <dl>
+                                <dt>Company</dt>
+                                <dd>ion interactive</dd>
+
+                                <dt>Role</dt>
+                                <dd>Co-Designer, Architecture, Front-end Development</dd>
+
+                                <dt>Tools</dt>
+                                <dd>Aurelia.js, Webpack, TypeScript, HTML, SASS, Figma</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col col--xs-12 col--sm-6">
+                    <figure class="portfolio-item">
+                        <img src="assets/images/port/raw/dashboard_anon.png" alt="Creative Studio Screenshot" />
+                        <figcaption class="portfolio-item__content" tabindex="0">
+                            <h3>Telephony System Dashboard</h3>
+                            <dl>
+                                <dt>Company</dt>
+                                <dd>Stealth</dd>
+
+                                <dt>Role</dt>
+                                <dd>Designer, Architecture, Full-stack Development</dd>
+
+                                <dt>Tools</dt>
+                                <dd>Marionette, Require.js, ES5, HTML, SASS</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col col--xs-12 col--sm-6">
+                    <figure class="portfolio-item">
+                        <img src="assets/images/port/raw/ion/interactive-content-builder.png" alt="Creative Studio Screenshot" />
+                        <figcaption class="portfolio-item__content" tabindex="0">
+                            <h3>Interactive Content Builder</h3>
+                            <dl>
+                                <dt>Company</dt>
+                                <dd>ion interactive (2013-2016)</dd>
+
+                                <dt>Role</dt>
+                                <dd>Architecture, Front-end Development</dd>
+
+                                <dt>Tools</dt>
+                                <dd>Backbone.js, Require.js, ES5, HTML, LESS</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col col--xs-12 col--sm-6">
+                    <figure class="portfolio-item">
+                        <img src="assets/images/port/raw/landing_page_1.png" alt="Sparx site design" />
+                        <figcaption class="portfolio-item__content" tabindex="0">
+                            <h3>Landing Page Concept</h3>
+                            <dl>
+                                <dt>Company</dt>
                                 <dd>Landing Page Design (2014)</dd>
 
                                 <dt>Role</dt>
                                 <dd>Designer, Developer, Partner</dd>
 
-                                <dt>Skills</dt>
+                                <dt>Tools</dt>
                                 <dd>HTML5, CSS3, Photoshop</dd>
                             </dl>
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-sm-6">
-                    <figure class="portfolio-item"><img src="http://dev.d13design.com/assets/images/port/port_dpi_prev.png" alt="Dynamic Partners International Website" />
-                        <figcaption>
-                            <h3>Dynamic Partners International</h3>
+                <div class="col col--xs-12 col--sm-6">
+                    <figure class="portfolio-item">
+                        <img src="assets/images/port/raw/DPI-02.png" alt="Dynamic Partners International Website" />
+                        <figcaption class="portfolio-item__content" tabindex="0">
+                            <h3>Small Business Homepage</h3>
                             <dl>
-                                <dt>Project</dt>
-                                <dd>Website (2014)</dd>
+                                <dt>Company</dt>
+                                <dd>Dynamic Partners International (2014)</dd>
 
                                 <dt>Role</dt>
                                 <dd>Designer, Developer, Contractor</dd>
 
-                                <dt>Skills</dt>
+                                <dt>Tools</dt>
                                 <dd>HTML5, CSS3, JS, jQuery, Photoshop</dd>
                             </dl>
                             <a href="http://www.dynamicpartnersint.com/" target="_blank">Launch website</a>
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-sm-6">
-                    <figure class="portfolio-item"><img src="http://dev.d13design.com/assets/images/port/port_bhpm_prev.png" alt="BHP Markets Website" />
-                        <figcaption>
-                            <h3>BHP Markets</h3>
-                            <dl>
-                                <dt>Project</dt>
-                                <dd>Website Redesign (2013)</dd>
-
-                                <dt>Role</dt>
-                                <dd>UI Developer, Contractor</dd>
-
-                                <dt>Skills</dt>
-                                <dd>HTML5, CSS3, JS, jQuery, Photoshop</dd>
-                            </dl>
-                            <a href="http://www.bhpmarkets.com/" target="_blank">Launch website</a>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-6">
-                    <figure class="portfolio-item"><img src="http://dev.d13design.com/assets/images/port/port_restee-v1-app_prev.png" alt="RESTEE Mobile Design" />
-                        <figcaption>
-                            <h3>RESTEE Mobile</h3>
-                            <dl>
-                                <dt>Project</dt>
-                                <dd>Website Design (2013)</dd>
-
-                                <dt>Role</dt>
-                                <dd>UI Developer &amp; Designer, Co-Founder</dd>
-
-                                <dt>Skills</dt>
-                                <dd>HTML5, CSS, JS, jQuery, Photoshop</dd>
-                            </dl>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-6">
+                <div class="col col--xs-12 col--sm-6">
                     <figure class="portfolio-item">
-                        <img src="http://dev.d13design.com/assets/images/port/port_rojo-v2_prev.png" alt="Rojo Solutions Corporate Site" />
-                        <figcaption>
-                            <h3>Rojo Solutions v2</h3>
+                        <img src="assets/images/port/raw/spirit_screenshot.png" alt="Spirit Airlines Site" />
+                        <figcaption class="portfolio-item__content" tabindex="0">
+                            <h3>Website Redesign</h3>
                             <dl>
-                                <dt>Project</dt>
-                                <dd>Website Redesign (2012)</dd>
-
-                                <dt>Role</dt>
-                                <dd>Web Developer, Web Designer, Co-Founder</dd>
-
-                                <dt>Skills</dt>
-                                <dd>HTML5, CSS, JS, jQuery, Photoshop</dd>
-                            </dl>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-6">
-                    <figure class="portfolio-item">
-                        <img src="http://dev.d13design.com/assets/images/port/port_colors-logo_prev.png" alt="Colors App Logo" />
-                        <figcaption>
-                            <h3>Colors App</h3>
-                            <dl>
-                                <dt>Project</dt>
-                                <dd>Logo Design (2012)</dd>
-
-                                <dt>Role</dt>
-                                <dd>Designer</dd>
-
-                                <dt>Skills</dt>
-                                <dd>Photoshop</dd>
-                            </dl>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-6">
-                    <figure class="portfolio-item">
-                        <img src="assets/images/port/port_spirit_prev.png" alt="Spirit Airlines Site" />
-                        <figcaption>
-                            <h3>Spirit Airlines</h3>
-                            <dl>
-                                <dt>Project</dt>
-                                <dd>Website Redesign (2011)</dd>
+                                <dt>Company</dt>
+                                <dd>Spirit Airlines (2011)</dd>
 
                                 <dt>Role</dt>
                                 <dd>UI Lead, JS Ninja, Browser Wrangler, Employee</dd>
@@ -216,106 +255,14 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-sm-6">
+                <div class="col col--xs-12 col--sm-6">
                     <figure class="portfolio-item">
-                        <img src="assets/images/port/port_betterfly_prev.png" alt="Betterfly.com Homepage Redesign" />
-                        <figcaption>
-                            <h3>Betterfly.com</h3>
+                        <img src="assets/images/port/raw/Cruise_HP.png" alt="Bahama Cruise Vacations Site" />
+                        <figcaption class="portfolio-item__content" tabindex="0">
+                            <h3>Cruise Microsite</h3>
                             <dl>
-                                <dt>Project</dt>
-                                <dd>Homepage Redesign (2011)</dd>
-
-                                <dt>Role</dt>
-                                <dd>JS Ninja, Browser Wrangler, Contractor</dd>
-
-                                <dt>Skills</dt>
-                                <dd>HTML5, CSS3, JS, jQuery, PHP, Photoshop</dd>
-                            </dl>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-6">
-                    <figure class="portfolio-item">
-                        <img src="assets/images/port/port_rojosolutions_prev.png" alt="ROJO Solutions Corporate Site" />
-                        <figcaption>
-                            <h3>Rojo Solutions</h3>
-                            <dl>
-                                <dt>Project</dt>
-                                <dd>Corporate Site (2010)</dd>
-
-                                <dt>Role</dt>
-                                <dd>Web Developer, Web Designer, Co-Founder</dd>
-
-                                <dt>Skills</dt>
-                                <dd>XHTML, CSS, JS, jQuery, Photoshop</dd>
-                            </dl>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-6">
-                    <figure class="portfolio-item">
-                        <img src="assets/images/port/port_d13design_prev.png" alt="D13 Design Corporate Site" />
-                        <figcaption>
-                            <h3>D13 Design</h3>
-                            <dl>
-                                <dt>Project</dt>
-                                <dd>Corporate Site (2010)</dd>
-
-                                <dt>Role</dt>
-                                <dd>Web Developer, Web Designer, Owner</dd>
-
-                                <dt>Skills</dt>
-                                <dd>XHTML, CSS, JS, jQuery, Photoshop</dd>
-                            </dl>
-                            <a href="http://www.d13design.com/" target="_blank">Launch website</a>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-6">
-                    <figure class="portfolio-item">
-                        <img src="assets/images/port/port_drghersi_prev.png" alt="Marcelo Ghersi, M.D., P.A Site" />
-                        <figcaption>
-                            <h3>Marcelo Ghersi, M.D., P.A</h3>
-                            <dl>
-                                <dt>Project</dt>
-                                <dd>Company Website (2009)</dd>
-
-                                <dt>Role</dt>
-                                <dd>Web Developer, Web Designer, Contractor</dd>
-
-                                <dt>Skills</dt>
-                                <dd>XHTML, CSS, JS, PHP, Photoshop</dd>
-                            </dl>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-6">
-                    <figure class="portfolio-item">
-                        <img src="assets/images/port/port_cybertek_prev.png" alt="Cybertek Solutions Corporate Site" />
-                        <figcaption>
-                            <h3>CyberTek Solutions</h3>
-                            <dl>
-                                <dt>Project</dt>
-                                <dd>Corporate Site (2009)</dd>
-
-                                <dt>Role</dt>
-                                <dd>Web Designer, Freelance</dd>
-
-                                <dt>Skills</dt>
-                                <dd>XHTML, CSS, JS, Photoshop</dd>
-                            </dl>
-                            <a href="http://www.cybertek-us.com/" target="_blank">Launch website</a>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-6">
-                    <figure class="portfolio-item">
-                        <img src="assets/images/port/port_bahamas_prev.png" alt="Bahama Cruise Vacations Site" />
-                        <figcaption>
-                            <h3>Bahama Cruise Vacations</h3>
-                            <dl>
-                                <dt>Project</dt>
-                                <dd>Cruise Site (2009)</dd>
+                                <dt>Company</dt>
+                                <dd>Bahama Cruise Vacations (2009)</dd>
 
                                 <dt>Role</dt>
                                 <dd>Web Designer, Co-Developer, Freelance</dd>
@@ -326,134 +273,66 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-sm-6">
-                    <figure class="portfolio-item">
-                        <img src="assets/images/port/port_dreammaker_prev.png" alt="DreamMaker Miami Company Site" />
-                        <figcaption>
-                            <h3>DreamMaker Miami</h3>
-                            <dl>
-                                <dt>Project</dt>
-                                <dd>Company Site (2008)</dd>
-
-                                <dt>Role</dt>
-                                <dd>Web Developer, Web Designer, Freelance</dd>
-
-                                <dt>Skills</dt>
-                                <dd>XHTML, CSS, JS, PHP, MySQL, Photoshop</dd>
-                            </dl>
-                            <a href="http://dev.dreammakermiami.com/" target="_blank">Launch website</a>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-6">
-                    <figure class="portfolio-item">
-                        <img src="assets/images/port/port_dscripted_prev.png" alt="DScripted Wordpress Site" />
-                        <figcaption>
-                            <h3>DScripted</h3>
-                            <dl>
-                                <dt>Project</dt>
-                                <dd>Wordpress Site (2008)</dd>
-
-                                <dt>Role</dt>
-                                <dd>JS Ninja, Web Designer, Founder</dd>
-
-                                <dt>Skills</dt>
-                                <dd>XHTML, CSS, JS, PHP, Photoshop</dd>
-                            </dl>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-6">
-                    <figure class="portfolio-item">
-                        <img src="assets/images/port/port_efrai_prev.png" alt="Efrai Corporate Site" />
-                        <figcaption>
-                            <h3>Efrai</h3>
-                            <dl>
-                                <dt>Project</dt>
-                                <dd>Corporate Site (2008)</dd>
-
-                                <dt>Role</dt>
-                                <dd>Web Co-Designer, Backend Coder, Freelance</dd>
-
-                                <dt>Skills</dt>
-                                <dd>XHTML, CSS, JS, Classic ASP, MySQL, Flex, Photoshop</dd>
-                            </dl>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-6">
-                    <figure class="portfolio-item">
-                        <img src="assets/images/port/port_rosenbaumcontemporary_prev.png" alt="Rosenbaum Contemporary Corporate Site" />
-                        <figcaption>
-                            <h3>Rosenbaum Contemporary</h3>
-                            <dl>
-                                <dt>Project</dt>
-                                <dd>Corporate Site (2005)</dd>
-
-                                <dt>Role</dt>
-                                <dd>Web Designer, Freelance</dd>
-
-                                <dt>Skills</dt>
-                                <dd>XHTML, CSS, JS, Photoshop</dd>
-                            </dl>
-                        </figcaption>
-                    </figure>
-                </div>
             </div>
         </div>
     </section>
-    <section class="section--resume" id="resume">
+    <section class="section section--resume" id="resume">
         <div class="container">
             <h1>Experience</h1>
             <div class="experience-skills">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col col--xs-12 col--md-6">
                         <h2>Core Competencies</h2>
                         <ul>
-                            <li>mobile-first and responsive web design</li>
-                            <li>grid / layout systems</li>
-                            <li>progressive-enhancement</li>
-                            <li>page-load and performance-tuning</li>
-                            <li>browser debugging</li>
-                            <li>interactive web components</li>
-                            <li>UX design</li>
-                            <li>wireframing and user-flows</li>
-                            <li>mentoring and training</li>
+                            <li>CSS architecture</li>
+                            <li>Front-end architecture</li>
+                            <li>Performance tuning</li>
+                            <li>Design systems</li>
+                            <li>Responsive &amp; adaptive design</li>
+                            <li>Device debugging</li>
+                            <li>Prototyping &amp; wireframing</li>
+                            <li>Mentoring &amp; training</li>
+                            <li>Agile development</li>
                         </ul>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col col--xs-12 col--md-6">
                         <h2>Technical Competencies</h2>
                         <dl>
-                            <dt>Client-side UI</dt>
+                            <dt>Languages</dt>
                             <dd>
-                                JavaScript, HTML, CSS, LESS, jQuery, Backbone, Lo-Dash, Require.js, Handlebars, Knockout.js, Bootstrap
+                                JavaScript (ES6, TypeScript), HTML, CSS (LESS, SASS, PostCSS)
                             </dd>
-                            <dt>Server-side UI</dt>
+                            <dt>Libraries</dt>
                             <dd>
-                                JSP, JSTL, Tiles, GSP/Sitemesh, Swig.js, r.js, PHP, Smarty, JSON, XML, XSLT, XPath, XSL-FO
+                                Vue, Aurelia, Backbone, React, Faker, Mirage, Gridsome
                             </dd>
-                            <dt>Environments</dt>
+                            <dt>Builds &amp; tooling</dt>
                             <dd>
-                                Node.js, Java, .NET, Grails, LAMP, MySQL, MongoDB, Git/GitHub, CVS, TFS
+                                Webpack, Babel, ESLint, Prettier, Yarn, Lerna, Storybook, SassDoc
                             </dd>
-                            <dt>Tools</dt>
+                            <dt>Application stacks</dt>
                             <dd>
-                                Eclipse (Aptana or STS), WebStorm, PHPStorm, Visual Studio, Photoshop
+                                NodeJS/Express, ASP.NET (core, MVC, Web Forms), Java/Spring
+                            </dd>
+                            <dt>Software</dt>
+                            <dd>
+                                Visual Studio Code, IntelliJ, Figma, Adobe XD, Photoshop, GitHub
                             </dd>
                         </dl>
                     </div>
                 </div>
             </div>
+            <!--
             <div class="experience-history">
                 <h2>History</h2>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col col--xs-12 col--md-3">
                         <h3>ion interactive</h3>
                         <p>
                             March 2012 &mdash; Present
                         </p>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col col--xs-12 col--md-9">
                         <h4>JavaScript Developer</h4>
 
                         <p>The ion platform is a SaaS, originally providing the best landing-page builder on the market. In 2014, the platform changed focus to providing tools to build interactive, app-like web experiences. My work has been instrumental in making that transition.</p>
@@ -478,13 +357,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col col--xs-12 col--md-3">
                         <h3>D13 Design, LLC</h3>
                         <p>
                             September 2007 &mdash; Present
                         </p>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col col--xs-12 col--md-9">
                         <h4>Creative Technologist / Owner</h4>
 
                         <p>Started the company to focus on creating high-quality web experiences using modern design and development practices. As a one-man show, I've won projects over established development and design agencies.</p>
@@ -496,13 +375,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col col--xs-12 col--md-3">
                         <h3>ROJO Solutions, LLC</h3>
                         <p>
                             October 2010 &mdash; April 2014
                         </p>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col col--xs-12 col--md-9">
                         <h4>Creative Technologist / Co-Founder</h4>
 
                         <p>Responsible for making everything look pretty and flow smoothly: UX design, front-end development and web design.</p>
@@ -514,13 +393,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col col--xs-12 col--md-3">
                         <h3>Spirit Airlines, Inc</h3>
                         <p>
                             October 2010 &mdash; March 2012
                         </p>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col col--xs-12 col--md-9">
                         <h4>Web Developer</h4>
 
                         <p>Brought on to modernizing Spirit's old and outdated flight booking experience. Within 9 months, I had re-structured the entire website's markup and styles, resulting in a modular, easy to implement, set of reusable interface patterns and JavaScript components.</p>
@@ -533,13 +412,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col col--xs-12 col--md-3">
                         <h3>DScripted Toolkit for JavaScript</h3>
                         <p>
                             February 2008 &mdash; October 2010
                         </p>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col col--xs-12 col--md-9">
                         <h4>JavaScript Developer / Founder</h4>
 
                         <p>Created an open-source JavaScript library in effort to simplify development of dynamic web applications.</p>
@@ -551,13 +430,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col col--xs-12 col--md-3">
                         <h3>TracFone Wireless, Inc</h3>
                         <p>
                             May 2005 &mdash; October 2010
                         </p>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col col--xs-12 col--md-9">
                         <h4>Senior Web Graphics Designer</h4>
 
                         <p>Hands-on IT team lead for all projects requiring UI/UX design and development with teams of up to 6 people.</p>
@@ -570,13 +449,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col col--xs-12 col--md-3">
                         <h3>Sole-Proprietor</h3>
                         <p>
                             October 1996 &mdash; September 2007
                         </p>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col col--xs-12 col--md-9">
                         <h4>Interactive Design Consultant</h4>
 
                         <p>Design and develop web-based customer-facing and business-user applications.</p>
@@ -588,13 +467,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col col--xs-12 col--md-3">
                         <h3>JBT Productions, Inc</h3>
                         <p>
                             April 2004 &mdash; April 2005
                         </p>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col col--xs-12 col--md-9">
                         <h4>Creative Director</h4>
 
                         <p>An e-learning startup that sought to build interactive online courses, but failed to secure further funding.</p>
@@ -607,13 +486,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col col--xs-12 col--md-3">
                         <h3>Rosenbaum Fine Art, Inc</h3>
                         <p>
                             May 2001 &mdash; April 2004
                         </p>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col col--xs-12 col--md-9">
                         <h4>Technology Manager</h4>
 
                         <p>Founded the company's website and online marketing programs, generating thousands of quality leads and increased sales from website registrations, online auctions and email offers. </p>
@@ -626,13 +505,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col col--xs-12 col--md-3">
                         <h3>Online Auctions, Inc</h3>
                         <p>
                             May 2001 &mdash; April 2004
                         </p>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col col--xs-12 col--md-9">
                         <h4>Lead 3D Artist & Webmaster</h4>
 
                         <p>3D graphics, web design and development for a patent-pending, 3D animated, online auctioning house. Changed to a part-role in early 2002 while company sought funding. At the same time, joining the owner's other business, Rosenbaum Fine Art, as a full-time employee.</p>
@@ -644,13 +523,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col col--xs-12 col--md-3">
                         <h3>Consumers Group, Inc</h3>
                         <p>
                             May 2000 &mdash; May 2001
                         </p>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col col--xs-12 col--md-9">
                         <h4>Web Graphics Designer</h4>
 
                         <ul>
@@ -661,42 +540,49 @@
                     </div>
                 </div>
             </div>
+            -->
         </div>
     </section>
-    <section class="section--skunkworks" id="skunkworks">
+    <section class="section section--skunkworks" id="skunkworks">
         <div class="container">
             <h1>Skunkworks</h1>
 
             <div class="row">
-                <div class="col-md-4">
-                    <h2>BEM + LESS</h2>
-                    <script src="https://gist.github.com/d13/90aa65b955907209c430.js"></script>
-                    <p></p>
+                <div class="col col--xs-12 col--md-6">
+                    <h2>HSLuv Color Ramps</h2>
+                    <p class="codepen" data-height="610" data-theme-id="light" data-default-tab="result" data-slug-hash="abyyRXm" data-user="d13" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/d13/pen/abyyRXm">
+                        Color scale with HSLuv</a> by Keith (<a href="https://codepen.io/d13">@d13</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
                 </div>
-                <div class="col-md-4">
-                    <h2>Node.js: XML API hell</h2>
-                    <script src="https://gist.github.com/d13/eda0f6e068bdf4011025.js"></script>
-                    <p></p>
+                <div class="col col--xs-12 col--md-6">
+                    <h2>Color Grid</h2>
+                    <p class="codepen" data-height="400" data-theme-id="light" data-default-tab="result" data-slug-hash="WaXLvM" data-user="d13" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/d13/pen/WaXLvM">
+                        Color steps</a> by Keith (<a href="https://codepen.io/d13">@d13</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
                 </div>
-                <div class="col-md-4">
-                    <h2>LESS: variables as mixins</h2>
-                    <script src="https://gist.github.com/d13/b31489dd37e0f34b5175.js"></script>
-                    <p></p>
+                <div class="col col--xs-12">
+                    <h2>Visibility Component</h2>
+                    <script src="https://gist.github.com/d13/fa220b4c3b988c820a81b91b21065a7a.js"></script>
                 </div>
             </div>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
         </div>
     </section>
-    <section class="section--contact" id="contact">
+    <section class="section section--contact" id="contact">
         <div class="container">
             <h1>Contact</h1>
 
             <div class="row">
-                <div class="col-md-6 no-gutter">
+                <div class="col col--xs-12 col--md-6 no-gutter">
                     <div class="map-location">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.040982856231!2d-80.37539799999995!3d26.06491700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9a0cfa08513b1%3A0xef205128d15657f0!2s4468+Dogwood+Cir%2C+Weston%2C+FL+33331!5e0!3m2!1sen!2sus!4v1422577643626" width="100%" height="450" frameborder="0" style="border:0"></iframe>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col col--xs-12 col--md-6">
                     <dl>
                         <dt>Address:</dt>
                         <dd>
@@ -709,8 +595,8 @@
                         <dd><a href="mailto:kdaulton@gmail.com">kdaulton@gmail.com</a></dd>
                         <dt>Links:</dt>
                         <dd>
-                            <a target="_blank" href="https://github.com/d13"><i class="fa fa-3x fa-github-alt"></i></a>
-                            <a target="_blank" href="http://www.linkedin.com/in/keithdaulton"><i class="fa fa-3x fa-linkedin-square"></i></a>
+                            <a target="_blank" href="https://github.com/d13">GitHub</a>
+                            <a target="_blank" href="http://www.linkedin.com/in/keithdaulton">LinkedIn</a>
                         </dd>
                     </dl>
                 </div>
@@ -719,19 +605,12 @@
     </section>
 </div>
 <footer class="page-footer">
-    <!--
-    <div class="site-brand--footer">
-        <a class="site-brand__link" href="#">
-            <span class="site-brand__name">Keith Daulton</span>
-        </a>
-    </div>
-    -->
-    <div>
-        <p>
-            All content &copy; Copyright 1996-2015 Keith Daulton and respective brands. All rights reserved.
-            <a href="https://mixpanel.com/f/partner"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_blue.png" alt="Mobile Analytics" style="vertical-align: middle;" /></a>
-        </p>
-    </div>
+    <p>
+        All content &copy; Copyright 1996-2021 Keith Daulton and respective brands. All rights reserved.
+    </p>
+    <p>
+        <a href="https://mixpanel.com/f/partner"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_blue.png" alt="Mobile Analytics" style="vertical-align: middle;" /></a>
+    </p>
 </footer>
 <script src="assets/scripts/libs/jQuery/jquery-1.11.1.min.js"></script>
 <script src="assets/scripts/libs/lodash/2.4.1/lodash.compat.min.js"></script>
