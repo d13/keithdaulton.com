@@ -586,7 +586,7 @@ a {
     }
 
     .page-header--pinned {
-        background-color: #d4d8dc;
+        background-color: #d4d8dccc;
         position: fixed;
         opacity: 0;
         -webkit-animation: fadeIn ease-in 1;
@@ -596,7 +596,8 @@ a {
         -webkit-animation-duration: .5s;
         animation-duration: .5s;
         -webkit-animation-delay: .4s;
-        animation-delay: .4s
+        animation-delay: .4s;
+        backdrop-filter: blur(10px);
     }
     .page-header--pinned .page-header__brand {
         height: 75px;
